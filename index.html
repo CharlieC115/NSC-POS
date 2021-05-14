@@ -1,87 +1,319 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>The Generics | Store</title>
-        <meta name="description" content="This is the description">
+        <title>NSC POS System</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Chicle:wght@400&display=swap"
+            rel="stylesheet">
         <link rel="stylesheet" href="style.css" />
         <script src="store.js" async></script>
     </head>
-    <body>
-        <header class="main-header">
-            <h1 class="band-name band-name-large">The Generics</h1>
-        </header>
-        <section class="container content-section">
-            <h2 class="section-header">MUSIC</h2>
-            <div class="shop-items">
-                <div class="shop-item">
-                    <span class="shop-item-title">Album 1</span>
-                    <img class="shop-item-image" src="images/img1.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$12.99</span>
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title">Album 2</span>
-                    <img class="shop-item-image" src="images/img2.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$14.99</span>
-                        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title">Album 3</span>
-                    <img class="shop-item-image" src="images/img3.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$9.99</span>
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title">Album 4</span>
-                    <img class="shop-item-image" src="images/img4.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$19.99</span>
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                    </div>
+<body>
+    <!-- Hero Image -->
+    <section class="hero-image">
+        <div class="hero-text text-uppercase">
+            <h1>Norfolk Snowsports Club</h1>
+            <h3>POS System</h3>
+        </div>
+    </section>
+    <!-- /.Hero Image -->
+    <section class="container">
+        <h2>CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div>
+            <strong>Total</strong>
+            <p class="cart-total-price">$0</p>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+    </section>
+            <!-- Soft Drinks -->
+    <section class="bg-red">
+        <div class="row">
+            <h2 class="col-12 purple">Soft Drinks</h2>
+        </div>
+        <div class="row shop-items">
+            <div class="col-2 shop-item">
+                <span class="shop-item-title">Water</span>
+                <span class="shop-item-price">$1</span>
+                <div class="shop-item-details">
+                    <button class="shop-item-button">Add to Order</button>
                 </div>
             </div>
-        </section>
-        <section class="container content-section">
-            <h2 class="section-header">MERCH</h2>
-            <div class="shop-items">
-                <div class="shop-item">
-                    <span class="shop-item-title">T-Shirt</span>
-                    <img class="shop-item-image" src="images/img5.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$19.99</span>
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title">Coffee Cup</span>
-                    <img class="shop-item-image" src="images/img6.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$6.99</span>
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                    </div>
+            <div class="col-2 shop-item">
+                <span class="shop-item-title">Can</span>
+                <span class="shop-item-price">$1.20</span>
+                <div class="shop-item-details">
+                    <button class="shop-item-button">Add to Order</button>
                 </div>
             </div>
-        </section>
-        <section class="container content-section">
-            <h2 class="section-header">CART</h2>
-            <div class="cart-row">
-                <span class="cart-item cart-header cart-column">ITEM</span>
-                <span class="cart-price cart-header cart-column">PRICE</span>
-                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            <div class="col-2">
+                <span class="shop-item-title">Fruit Shoot</span>
+                <span class="shop-item-price">$1.20</span>
+                <div class="shop-item-details">
+                    <button class="shop-item-button">Add to Order</button>
+                </div>
             </div>
-            <div class="cart-items">
+            <div class="col-2">
+                <span class="shop-item-title">Juice Box</span>
+                <span class="shop-item-price">$1.20</span>
+                <div class="shop-item-details">
+                    <button class="shop-item-button">Add to Order</button>
+                </div>
             </div>
-            <div class="cart-total">
-                <strong class="cart-total-title">Total</strong>
-                <span class="cart-total-price">$0</span>
+            <div class="col-2">
+                <span class="shop-item-title">Lucozade</span>
+                <span class="shop-item-price">$2</span>
+                <div class="shop-item-details">
+                    <button class="shop-item-button">Add to Order</button>
+                </div>
             </div>
-            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
-        </section>
-    </body>
+            <div class="col-2">
+                <span class="shop-item-title">Oasis</span>
+                <span class="shop-item-price">$2</span>
+                <div class="shop-item-details">
+                    <button class="shop-item-button">Add to Order</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.Soft Drinks -->
+ <!-- Hot Drinks -->
+ <section class="bg-purple">
+    <div class="row">
+        <h2 class="col-12 red">Hot Drinks</h2>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <span class="shop-item-title">Coffee</span>
+            <span class="shop-item-price">$1.60</span>
+            <div class="shop-item-details">
+                    <button class="shop-item-button">Add to Order</button>
+                </div>
+        </div>
+        <div class="col-2">
+            <span class="shop-item-title">Tea</span>
+            <span class="shop-item-price">$1.20</span>
+            <div class="shop-item-details">
+                    <button class="shop-item-button">Add to Order</button>
+                </div>
+        </div>
+        <div class="col-2">
+            <span class="shop-item-title">Clipper Tea</span>
+            <span class="shop-item-price">$1.60</span>
+            <div class="shop-item-details">
+                    <button class="shop-item-button">Add to Order</button>
+                </div>
+        </div>
+        <div class="col-2">
+            <span class="shop-item-title">Hot Chocolate</span>
+            <span class="shop-item-price">$2</span>
+            <div class="shop-item-details">
+                    <button class="shop-item-button">Add to Order</button>
+                </div>
+        </div>
+        <div class="col-2">
+            <span class="shop-item-title">Hot Chocolate <small>+ Cream/Marshmallows</small></span>
+            <span class="shop-item-price">$2.50</span>
+            <div class="shop-item-details">
+                    <button class="shop-item-button">Add to Order</button>
+                </div>
+        </div>
+    </div>
+</section>
+<!-- /.Hot Drinks -->
+<!-- Alcohol -->
+<section class="bg-red">
+    <div class="row">
+        <h2 class="col-12 purple">Alcohol</h2>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <span class="shop-item-title">Bilburger</span>
+            <span class="shop-item-price">$2</span>
+            <div class="shop-item-details">
+                    <button class="shop-item-button">Add to Order</button>
+                </div>
+        </div>
+        <div class="col-2">
+            <span class="shop-item-title">Corona</span>
+            <span class="shop-item-price">$3.80</span>
+            <div class="shop-item-details">
+                    <button class="shop-item-button">Add to Order</button>
+                </div>
+        </div>
+        <div class="col-2">
+            <span class="shop-item-title">Ghost Ship</span>
+            <span class="shop-item-price">$3.50</span>
+            <div class="shop-item-details">
+                    <button class="shop-item-button">Add to Order</button>
+                </div>
+        </div>
+        <div class="col-2">
+            <span class="shop-item-title">Dry Hopped</span>
+            <span class="shop-item-price">$3.80</span>
+            <div class="shop-item-details">
+                    <button class="shop-item-button">Add to Order</button>
+                </div>
+        </div>
+        <div class="col-2">
+            <span class="shop-item-title">Mosaic</span>
+            <span class="shop-item-price">$3.80</span>
+            <div class="shop-item-details">
+                    <button class="shop-item-button">Add to Order</button>
+                </div>
+        </div>
+        <div class="col-2">
+            <span class="shop-item-title">Old Mout</span>
+            <span class="shop-item-price">$4</span>
+            <div class="shop-item-details">
+                    <button class="shop-item-button">Add to Order</button>
+                </div>
+        </div>
+        <div class="col-2">
+            <span class="shop-item-title">Wine</span>
+            <span class="shop-item-price">$3.90</span>
+            <div class="shop-item-details">
+                    <button class="shop-item-button">Add to Order</button>
+                </div>
+        </div>
+        <div class="col-2">
+            <span class="shop-item-title">Single Gin</span>
+            <span class="shop-item-price">$5</span>
+            <div class="shop-item-details">
+                    <button class="shop-item-button">Add to Order</button>
+                </div>
+        </div>
+        <div class="col-2">
+            <span class="shop-item-title">Double Gin</span>
+            <span class="shop-item-price">$6.50</span>
+            <div class="shop-item-details">
+                    <button class="shop-item-button">Add to Order</button>
+                </div>
+        </div>
+    </div>
+</section>
+<!-- /.Alcohol -->
+<!-- Food -->
+<section class="bg-purple">
+    <div class="row">
+        <h2 class="col-12 red">Food</h2>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <span class="shop-item-title">Tex Mex Main</span>
+            <span class="shop-item-price">$7</span>
+            <div class="shop-item-details">
+                    <button class="shop-item-button">Add to Order</button>
+                </div>
+        </div>
+        <div class="col-2">
+            <span class="shop-item-title">Burger</span>
+            <span class="shop-item-price">$7</span>
+            <div class="shop-item-details">
+                    <button class="shop-item-button">Add to Order</button>
+                </div>
+        </div>
+        <div class="col-2">
+            <span class="shop-item-title">Fries</span>
+            <span class="shop-item-price">$2</span>
+            <div class="shop-item-details">
+                    <button class="shop-item-button">Add to Order</button>
+                </div>
+        </div>
+        <div class="col-2">
+            <span class="shop-item-title">Fries + Cheese</span>
+            <span class="shop-item-price">$2.50</span>
+            <div class="shop-item-details">
+                    <button class="shop-item-button">Add to Order</button>
+                </div>
+        </div>
+        <div class="col-2">
+            <span class="shop-item-title">Kids Burger</span>
+            <span class="shop-item-price">$5</span>
+            <div class="shop-item-details">
+                    <button class="shop-item-button">Add to Order</button>
+                </div>
+        </div>
+        <div class="col-2">
+            <span class="shop-item-title">Bacon & Egg Bap</span>
+            <span class="shop-item-price">$3.50</span>
+            <div class="shop-item-details">
+                    <button class="shop-item-button">Add to Order</button>
+                </div>
+        </div>
+        <div class="col-2">
+            <span class="shop-item-title">Bacon Bap</span>
+            <span class="shop-item-price">$3</span>
+            <div class="shop-item-details">
+                    <button class="shop-item-button">Add to Order</button>
+                </div>
+        </div>
+        <div class="col-2">
+            <span class="shop-item-title">Egg Bap</span>
+            <span class="shop-item-price">$3</span>
+            <div class="shop-item-details">
+                    <button class="shop-item-button">Add to Order</button>
+                </div>
+        </div>
+    </div>
+</section>
+<!-- /.Food -->
+<!-- Snacks -->
+<section class="bg-red">
+    <div class="row">
+        <h2 class="col-12 purple">Snacks</h2>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <span class="shop-item-title">Crisps</span>
+            <span class="shop-item-price">$1.20</span>
+            <div class="shop-item-details">
+                    <button class="shop-item-button">Add to Order</button>
+                </div>
+        </div>
+        <div class="col-2">
+            <span class="shop-item-title">Chocolate</span>
+            <span class="shop-item-price">$1.20</span>
+            <div class="shop-item-details">
+                    <button class="shop-item-button">Add to Order</button>
+                </div>
+        </div>
+        <div class="col-2">
+            <span class="shop-item-title">Muffins</span>
+            <span class="shop-item-price">$1.50</span>
+            <div class="shop-item-details">
+                <button class="shop-item-button">Add to Order</button>
+            </div>
+        </div>
+        <div class="col-2">
+            <span class="shop-item-title">Half Bag of Sweets</span>
+            <span class="shop-item-price">$0.50</span>
+            <div class="shop-item-details">
+                <button class="shop-item-button">Add to Order</button>
+            </div>
+        </div>
+        <div class="col-2">
+            <span class="shop-item-title">Full Bag of Sweets</span>
+            <span class="shop-item-price">$1</span>
+            <div class="shop-item-details">
+                <button class="shop-item-button">Add to Order</button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /.Snacks -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+crossorigin="anonymous"></script>
+</body>
 </html>
